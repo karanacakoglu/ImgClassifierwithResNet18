@@ -21,7 +21,3 @@ The implementation follows a professional deep learning pipeline:
 * **Versatility:** Highly effective for mobile or edge-computing applications where resources are limited.
 
 ---
-
-### 🔗 Quick Links
-- **Colab Notebook:** [View Implementation](https://github.com/karanacakoglu)
-- **Frameworks:** Python, PyTorch/Keras, OpenCV.
