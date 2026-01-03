@@ -27,6 +27,3 @@ The model focuses on high **Recall (Sensitivity)** to ensure that potential pneu
 
 ---
 
-### 🔗 Quick Links
-- **Colab Notebook:** [View Medical Imaging Implementation](https://github.com/karanacakoglu)
-- **Frameworks:** Python, PyTorch/TensorFlow, OpenCV, Matplotlib.
