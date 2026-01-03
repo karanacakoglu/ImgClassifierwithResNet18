@@ -1,23 +1,32 @@
-# 🖼️ Image Classification using ResNet18 Architecture
+# 🫁 Chest X-Ray Medical Image Classification (Pneumonia)
 
 ### Project Overview
-This project demonstrates the application of **Transfer Learning** using the **ResNet18** model for image classification. [cite_start]By using a residual network with 18 layers, the project aims to achieve high accuracy while maintaining high inference speed and lower computational resource usage. 
+Pneumonia is a critical respiratory infection that requires rapid and accurate diagnosis. This project implements a **Deep Learning** model based on the **ResNet18** architecture to automatically detect signs of pneumonia from Chest X-Ray (CXR) images.
 
 ---
 
-### 🛠️ Technical Workflow
-The implementation follows a professional deep learning pipeline:
-
-* **Model Selection:** Chose **ResNet18** as a lightweight yet powerful backbone for visual feature extraction.
-* **Pre-trained Weights:** Utilized weights trained on ImageNet to significantly reduce convergence time and improve generalizability.
-* **Layer Customization:** Replaced the final fully connected layer to match the number of classes in the target dataset.
-* **Training Strategy:** Implemented optimization techniques such as learning rate scheduling and data augmentation to enhance model robustness.
+### 📊 Dataset Information
+* **Source:** [Chest X-Ray Images (Pneumonia) - Kaggle](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
+* **Content:** The dataset is organized into 3 folders (train, test, val) and contains subfolders for each image category (Pneumonia/Normal).
+* **Composition:** 5,856 X-Ray images (JPEG) and 2 categories (Pneumonia/Normal).
+* **Characteristics:** All chest X-ray imaging was performed as part of routine clinical care.
 
 ---
 
-### 🚀 Key Advantages of ResNet18
-* [cite_start]**Efficiency:** Faster training and inference compared to deeper models (like ResNet50/101). 
-* **Residual Learning:** Effectively trains deep networks by learning residual functions, solving the degradation problem.
-* **Versatility:** Highly effective for mobile or edge-computing applications where resources are limited.
+### 🛠️ Technical Implementation
+* **Model Backbone:** **ResNet18** (Residual Networks) was chosen for its efficient feature extraction and ability to train deep networks without degradation.
+* **Preprocessing:** - Resizing images to $224 \times 224$ pixels.
+    - Normalization based on ImageNet mean and standard deviation.
+    - Data Augmentation (Random Rotation, Zoom) to prevent overfitting on clinical samples.
+* **Transfer Learning:** Fine-tuned a pre-trained model to adapt from general object recognition to specific medical pattern recognition.
 
 ---
+
+### 🚀 Results & Performance
+The model focuses on high **Recall (Sensitivity)** to ensure that potential pneumonia cases are not missed, which is critical in a medical context.
+
+---
+
+### 🔗 Quick Links
+- **Colab Notebook:** [View Medical Imaging Implementation](https://github.com/karanacakoglu)
+- **Frameworks:** Python, PyTorch/TensorFlow, OpenCV, Matplotlib.
